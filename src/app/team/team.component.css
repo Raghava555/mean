@@ -1,0 +1,67 @@
+.teamPage{
+    font-family:Microsoft JhengHe;
+    width: 60%;
+    height: 60%;
+    top: 30%;
+    left: 37%;
+    position: absolute;
+    background-color: #f2f2f2;
+    overflow-y: hidden;
+}
+hr{
+    width: 92%;
+    position: absolute;
+    left: 4%;
+    top: 20%;
+}
+.title{
+    height: 20%;
+    display: flex;
+    justify-content: left;
+    left: 4%;
+    top: 4%;
+    position: absolute;
+}
+.title p{
+    margin: 0px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.listpart{
+    position: absolute;
+    top: 24%;
+    max-height: 70%;
+    max-width: 100%;
+    overflow-y: scroll;
+    list-style-type: none;
+    left: 4%;
+}
+.ulList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 0px 15px 0px
+}
+img{
+    width: 40px;
+    padding-right: 80px;
+}
+.imageList{
+    display: flex;
+    width: 100%;
+}
+.avatar{
+    padding-right: 90px;
+    width: auto;
+}
+.imageList .avatar {
+    margin-right: 20px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+img{
+    width: 40px;
+    height: 40px;
+}

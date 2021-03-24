@@ -1,0 +1,63 @@
+.aboutPage{
+    font-family:Microsoft JhengHe;
+    width: 60%;
+    height: 65%;
+    top: 30%;
+    left: 37%;
+    position: absolute;
+    background-color: #f2f2f2;
+}
+hr{
+    width: 92%;
+    position: absolute;
+    left: 4%;
+}
+.title{
+    height: 20%;
+    display: flex;
+    justify-content: left;
+    left: 4%;
+    top: 4%;
+    position: absolute;
+}
+.title p{
+    margin: 0px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.content{
+    top: 24%;
+    position: absolute;
+    left: 4%;
+    width: 92%;
+}
+.about{
+    height: 40%;
+    display: flex;
+    justify-content: left;
+}
+img{
+    width: 20%;
+}
+.details p{
+    margin-left: 35px;
+    font-size: 12px;
+}
+.reusualComp{
+    margin-top: 2%;
+}
+.reusualComp h3{
+    font-size: 16px;
+}
+#firstComp{
+    position: absolute;
+    width: 15%;
+    height: 50%;
+    left: 0%;
+}
+#secondComp{
+    position: absolute;
+    width: 15%;
+    height: 50%;
+    left: 25%;
+}

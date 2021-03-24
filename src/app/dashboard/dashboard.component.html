@@ -1,0 +1,59 @@
+<app-sidemenu></app-sidemenu>
+<div class="dashboardPage">
+    <div class="userInfor">
+        <img src="../assets/images/images.jpg" >
+        <div class="welcome">
+            <p class="title">Welcome {{userData.name}}!</p>
+            <p class="datePara">Last login:{{userData.last_login}}</p>
+        </div>
+        
+    </div>
+   
+
+    <div class="accountSummary">
+        <p>Account Balance: &#163;{{userData.balance}}</p>
+        <div style="overflow-y: scroll;">
+        <table mat-table [dataSource]="tableData">
+            <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            <ng-container *ngFor="let column of displayedColumns">
+              <ng-container [matColumnDef]="column">
+                <th mat-header-cell *matHeaderCellDef>{{ column }}</th>
+                <td mat-cell *matCellDef="let row">{{row[column]}}</td>
+              </ng-container>
+            </ng-container>
+          </table>
+        </div>
+    </div>
+    <hr style="top: 56%;">
+
+    <div class="subscribeLayer">
+        <div class="subLay">
+
+        
+        <div class="subsciber" style="width: 50%;">
+            <p class="subPara">Subscribe to Alerts</p>
+            <div>
+                <input type="checkbox" class="checkbox_1" (click)="onCheckBox(1)" name="sms" value="">
+                <label for="sms">SMS Alert</label>
+            </div>
+            <div>
+                <input type="checkbox" class="checkbox_2" (click)="onCheckBox(2)" value="letter">
+                <label for="letter">Marketing Newsletter</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox_3" (click)="onCheckBox(3)" value="flyer">
+                <label for="flyer">Flyers</label>
+            </div>
+            <div class="btn">
+                <button mat-raised-button (click)="onSubmitButton()">Submit</button>
+            </div>
+        </div>
+
+        <div class="twoWay">
+            <p>Two Way Data Binding</p>
+            <input placeholder="Enter Value for two way binding" [(ngModel)]="twoWayData" type="text" matInput>
+        </div>
+    </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+.titles{
+    font-family: Microsoft JhengHe;
+    color: #fff;
+    position: absolute;
+    /* text-align: center; */
+    left: 13%;
+    top: 8%;
+}
+
+#dynamicTitle{
+    font-size: 14px;
+}
+
+#staticTitle{
+    font-size: 48px;
+    margin: 19px auto;
+}

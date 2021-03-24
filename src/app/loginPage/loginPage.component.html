@@ -1,0 +1,29 @@
+<div class="loginPage">
+        <div class="alert alertBg" role="alert" *ngIf="errorMsgBoolean">
+            <p>
+                <strong>Error:</strong> {{alertMsg}}!
+            </p>    
+          </div>
+
+          <div class="credential">
+            <div class="userIdField">
+                <p>User ID</p>
+                <input class="inputFieled" required [email]="true" placeholder="Enter User ID" minlength="7" maxlength="20" type="email" [(ngModel)]="username">
+                <span class="userError" *ngIf="userErrorMSgBoolean">* {{userErrorMsg}}</span>
+            </div>
+
+            <div class="userIdField">
+                <p>Password</p>
+                <input  class="inputFieled" matInput placeholder="Password" type="password" 
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                 [(ngModel)]="userPass" required>
+                <span *ngIf="passErrorMSgBoolean" class="userError">* {{passErrorMsg}}</span>
+            </div>
+          </div>
+        
+
+        <div class="btn">
+            <button mat-raised-button (click)="onLoginButton()">Log In</button>
+        </div>
+        <mat-progress-spinner *ngIf="showSpinner"></mat-progress-spinner>
+</div>

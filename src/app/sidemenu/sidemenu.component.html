@@ -1,0 +1,7 @@
+<div class="sideMenu" >
+    <h3 [ngClass]="{'selected': selectedMenu === 'dashboard'}" (click)="onTabChanged('dashboard')" id="dashboard" >Dashboard</h3>
+    <hr>
+    <h3 [ngClass]="{'selected': selectedMenu === 'about'}" (click)="onTabChanged('about')" >About</h3>
+    <hr>
+    <h3 [ngClass]="{'selected': selectedMenu === 'team'}" (click)="onTabChanged('team')">team</h3>
+</div>

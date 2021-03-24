@@ -1,0 +1,89 @@
+.loginPage{
+    background-color: #CC0000;
+    position: absolute;
+    width: 88%;
+    height: 67%;
+    top: 30%;
+    left: 10%;
+    font-family: Microsoft JhengHe;
+    overflow: hidden;
+}
+.alert{
+    position: absolute;
+    height: 15%;
+    top: 0%;
+    left: 4%;
+}
+.alert p{
+    margin: 0px;
+    padding: 19px 10px;
+    font-style: italic;
+}
+.alertBg{
+    width: 92%;
+    background-color: #fff;
+    margin: auto;
+    opacity: 0.4;
+    margin-top: 20px;
+}
+.credential{
+    margin: 4%;
+    top: 15%;
+    width: 92%;
+    position: absolute;
+}
+.userIdField{
+    width: 100%;
+    height: 20%;
+    top: 10%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    padding: 20px 0px;
+}
+.userIdField p{
+    color: #fff;
+    width: 20%;
+    margin: 0px;
+    font-size: 20px;
+}
+.inputFieled{
+    padding: 5px;
+    width: 25%;
+}
+.btn{
+    position: absolute;
+    top: 80%;
+    left: 75%;
+}
+.userIdField span{
+    color: #efdca3;
+    font-size: 9px;
+    position: absolute;
+    left: 20%;
+    top: 74%;
+}
+/*input{
+    background-color: #fff;
+    width: 40%;
+}
+.labelId{
+width: 30%;
+}
+.inputField{
+    width: 70%;
+} */
+
+button{
+    background-color: #cc9900;
+    border-color: #775900;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 20px 3px 20px;
+    font-family: Microsoft JhengHe;
+    font-size: 28px;
+    position: relative;
+    left: 85%;
+    top: 10%;
+}

@@ -1,0 +1,30 @@
+<app-sidemenu></app-sidemenu>
+<div class="teamPage">
+  <div class="title">
+    <p>{{ title }}</p>
+  </div>
+  <hr />
+  
+    <div class="listpart">
+      <ul class="ulList ulListCard" *ngFor="let i of teamList">
+        <li class="imageList">
+          <div class="img">
+            <img
+              src="{{ i.url }}"
+              class="avatar avatarCircle"
+              style="width: 40px"
+            />
+          </div>
+
+          <div class="avatar">
+            <span class="itemName">{{ i.name }}</span>
+          </div>
+        </li>
+      </ul>
+      <div class="teamImage">
+      <img src="../assets/images/bgImage.jpg" style="width: 100px"/>
+    </div>
+    </div>
+    
+  </div>
+

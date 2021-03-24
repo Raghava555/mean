@@ -1,0 +1,29 @@
+.sideMenu{
+    width: 25%;
+    left: 10%;
+    position: absolute;
+    height: 60%;
+    margin: auto;
+    top: 30%;
+    background-color: #f2f2f2;
+}
+.deselected{
+    color: #CC0000;  
+}
+.selected{
+    color: #666666;
+}
+h3{
+    text-transform: uppercase;
+    color: #CC0000;
+    width: 86%;
+    margin: 0;
+    padding: 5% 7%;
+    font-size: 22px;
+    font-family: Microsoft JhengHe;
+    cursor: pointer;
+    font-weight: bold;
+}
+hr{
+    width: 86%;
+}
